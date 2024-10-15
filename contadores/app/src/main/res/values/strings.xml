@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Contadores</string>
+    <string name="iniciar_contador1">Iniciar Contador 1</string>
+    <string name="iniciar_contador2">Iniciar Contador 2</string>
+    <string name="iniciar_contador3">Iniciar Contador 3</string>
+    <string name="incrementar">Incrementar</string>
+    <string name="decrementar">Decrementar</string>
+    <string name="resetear">Resetear</string>
+    <string name="contador_inicial">0</string>
+</resources>
