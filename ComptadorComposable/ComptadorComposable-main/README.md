@@ -1,34 +1,33 @@
-# COMPTADOR AMB COMPOSE
+# ComptadorComposable
 
-Partirem del projecte **ComptadorComposable**, que tenim al repositori GitHub de la unitat.
+Aquest projecte implementa un comptador utilitzant Jetpack Compose, que permet construir interfaces d'usuari declaratives de manera eficient.
 
-## Objectiu
+## Característiques
 
-Modificar el codi necessari per tal d'afegir els botons de **decrementar** i **ressetejar** el comptador.
+- Mostra un comptador al centre de la pantalla amb opcions per:
+  - Incrementar el valor.
+  - Decrementar el valor.
+  - Reiniciar el valor.
+- Utilitza `rememberSaveable` per preservar l'estat del comptador, fins i tot en rotacions de pantalla.
+- Inclou un botó per obrir una segona activitat que mostra el valor actual del comptador.
 
-## Instruccions
+## Modificacions
 
-1. **Utilitzar la funció composable `Row`**:
-   - La funció `Row` ens permet organitzar diversos composables en una fila, de la mateixa manera que `Column` ho fa en una columna.
+- S'han afegit botons per disminuir i reiniciar el comptador en una fila utilitzant el component `Row`.
+- La funcionalitat de **reset** preserva la reactivitat i actualització automàtica del valor mostrat.
+- S'ha refactoritzat el codi per eliminar comentaris innecessaris.
 
-2. **Afegir els botons**:
-   - Afegir un botó per decrementar el comptador.
-   - Afegir un botó per ressetejar el comptador.
+## Llibreries utilitzades
 
-## Exemple de codi
+- [Jetpack Compose](https://developer.android.com/jetpack/compose): Per a la implementació declarativa de la UI.
+- [Material3](https://developer.android.com/jetpack/androidx/releases/compose-material3): Per a utilitzar components moderns d'interfície d'usuari.
 
-```kotlin
-Row (
-    horizontalArrangement = Arrangement.SpaceEvenly,
-    verticalAlignment = Alignment.CenterVertically,
-    modifier = Modifier.fillMaxSize()
-    ){
-      Button(onClick = { comptador-- }) {
-          Text(text = "-", fontSize = 34.sp)
-      }
-      Spacer(modifier = Modifier.width(78.dp))
-      Button(onClick = { comptador++ }) {
-          Text(text = "+", fontSize = 33.sp)
-      }
-}
-```
+## Com instal·lar
+
+1. Obriu el projecte a Android Studio.
+2. Compileu i executeu l'aplicació en un dispositiu o emulador Android.
+3. Interactueu amb els botons per comprovar les funcionalitats.
+
+## Conclusions
+
+Aquest projecte demostra com Jetpack Compose simplifica el desenvolupament d'interfícies i millora la gestió d'estats gràcies a eines com `rememberSaveable`.
