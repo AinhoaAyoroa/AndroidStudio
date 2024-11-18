@@ -1,4 +1,4 @@
-# tasca amb Android
+# Tasca amb Android
 
 Aquest repositori inclou tres projectes de comptador desenvolupats en Android amb diferents arquitectures i implementacions:
 
