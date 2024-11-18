@@ -4,7 +4,7 @@
 
 Aquest treball té com a objectiu implementar un comptador en tres formats diferents, explorant diverses eines i arquitectures proporcionades pel desenvolupament Android:
 
-1. **ComptadorSimple**: Una implementació bàsica que utilitza `Intent` per passar dades entre activitats.
+1. **Comptador**: Una implementació bàsica que utilitza `Intent` per passar dades entre activitats.
 2. **ComptadorComposable**: Una versió que utilitza Jetpack Compose per a la construcció d'interfícies declaratives modernes.
 3. **ComptadorMVVM**: Una implementació basada en l'arquitectura MVVM (Model-View-ViewModel), que ofereix una millor separació de responsabilitats.
 
@@ -19,7 +19,7 @@ Aquest projecte no només busca implementar les funcionalitats sol·licitades, s
 
 ## **Estructura dels Projectes**
 
-### **1. ComptadorSimple**
+### **1. Comptador**
 Aquest projecte es basa en la implementació bàsica d'un comptador que incrementa, decrementa, es resseteja i mostra el valor actual en una segona activitat.
 
 #### **Característiques**
@@ -64,7 +64,7 @@ Amb MVVM, podríem prescindir de passar dades amb `Intent` a la segona activitat
 
 ## **Conclusions**
 
-1. **ComptadorSimple** és una bona solució per a projectes petits o senzills, però presenta limitacions quan el projecte creix.
+1. **Comptador** és una bona solució per a projectes petits o senzills, però presenta limitacions quan el projecte creix.
 2. **ComptadorComposable** introdueix un enfocament més modern i declaratiu, sent una opció recomanada per a noves aplicacions.
 3. **ComptadorMVVM** proporciona la millor separació de responsabilitats i escalabilitat, però requereix més temps d'aprenentatge i implementació.
 
